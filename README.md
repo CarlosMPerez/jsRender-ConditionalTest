@@ -1,2 +1,3 @@
 # jsRender-ConditionalTest
-Prueba de concepto para formato condicional con jsRender
+
+Proof of concept for conditional formatting with jsRender
