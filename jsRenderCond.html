@@ -1,11 +1,11 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
     <title>Prueba jsRender Condicional</title>
-    <script type="text/javascript" src="./jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="./jsrender.js"></script>
-    <script type="text/javascript" src="./jsrender-cond.js"></script>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="jsrender.js"></script>
+    <script type="text/javascript" src="jsrender-cond.js"></script>
+    <link rel="stylesheet" type="text/css" href="cond.css">
 </head>
 <body>
     <h1>Prueba de jsRender Condicional</h1>
@@ -24,195 +24,15 @@
                 <script id="fichaTmpl" type="text/x-jsrender">
                     <tr>
                         <td>{{: nombreFila }}</td>
-                        <td>
-                            {{if res1 != null}}
-                                {{if res1 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla1 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla1 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res2 != null}}
-                                {{if res2 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla2 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla2 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res3 != null}}
-                                {{if res3 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla3 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla3 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res4 != null}}
-                                {{if res4 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla4 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla4 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res5 != null}}
-                                {{if res5 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla5 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla5 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res6 != null}}
-                                {{if res6 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla6 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla6 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res7 != null}}
-                                {{if res7 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla7 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla7 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res8 != null}}
-                                {{if res8 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla8 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla8 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res9 != null}}
-                                {{if res9 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla9 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla9 }}
-                            {{/if}}
-                        </td>					
+                        <td class="{{: res1}}">{{: casilla1 }}</td>
+                        <td class="{{: res2}}">{{: casilla2 }}</td>
+                        <td class="{{: res3}}">{{: casilla3 }}</td>
+                        <td class="{{: res4}}">{{: casilla4 }}</td>
+                        <td class="{{: res5}}">{{: casilla5 }}</td>
+                        <td class="{{: res6}}">{{: casilla6 }}</td>
+                        <td class="{{: res7}}">{{: casilla7 }}</td>
+                        <td class="{{: res8}}">{{: casilla8 }}</td>
+                        <td class="{{: res9}}">{{: casilla9 }}</td>
                     </tr>
                 </script>
             </tbody>
@@ -223,298 +43,43 @@
             <tr><td colspan="2">Leyenda</td></tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Normal</td>
+                <td class="">
+                    &nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;
+                </td>
+            </tr>
             <tr>
                 <td>Eagle</td>
-                <td><span style="color: black; background-color: green;">
-                    &nbsp;&nbsp;&nbsp;-2&nbsp;&nbsp;</span>
+                <td class="eagle">
+                    &nbsp;&nbsp;&nbsp;-2&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>Birdie</td>
-                <td><span style="color: white; background-color: blue;">
-                    &nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp;</span>
+                <td class="birdie">
+                    &nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>Par</td>
-                <td><span style="color: white; background-color: grey;">
-                        &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;</span>
+                <td class="par">
+                    &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>Bogey</td>
-                <td><span style="color: black; background-color: orange;">
-                    &nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</span>
+                <td class="bogey">
+                    &nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
                 <td>DobleBogey</td>
-                <td><span style="color: white; background-color: red;">
-                    &nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;</span>
+                <td class="doblebogey">
+                    &nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;
                 </td>
             </tr>
         </tbody>
     </table>
 </body>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Prueba jsRender Condicional</title>
-    <script type="text/javascript" src="./jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="./jsrender.js"></script>
-    <script type="text/javascript" src="./jsrender-cond.js"></script>
-</head>
-<body>
-    <h1>Prueba de jsRender Condicional</h1>
-    <br/><br/><br/>
-    <table border="1">
-        <thead>
-            <tr>
-                <td colspan="10" style="text-align: middle;">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    FICHA DE JUGADOR
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </td>
-            </tr>
-        </thead>
-        <tbody id="bodyFicha">
-                <script id="fichaTmpl" type="text/x-jsrender">
-                    <tr>
-                        <td>{{: nombreFila }}</td>
-                        <td>
-                            {{if res1 != null}}
-                                {{if res1 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla1 }}</span>
-                                {{/if}}
-                                {{if res1 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla1 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla1 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res2 != null}}
-                                {{if res2 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla2 }}</span>
-                                {{/if}}
-                                {{if res2 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla2 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla2 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res3 != null}}
-                                {{if res3 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla3 }}</span>
-                                {{/if}}
-                                {{if res3 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla3 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla3 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res4 != null}}
-                                {{if res4 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla4 }}</span>
-                                {{/if}}
-                                {{if res4 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla4 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla4 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res5 != null}}
-                                {{if res5 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla5 }}</span>
-                                {{/if}}
-                                {{if res5 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla5 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla5 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res6 != null}}
-                                {{if res6 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla6 }}</span>
-                                {{/if}}
-                                {{if res6 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla6 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla6 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res7 != null}}
-                                {{if res7 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla7 }}</span>
-                                {{/if}}
-                                {{if res7 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla7 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla7 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res8 != null}}
-                                {{if res8 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla8 }}</span>
-                                {{/if}}
-                                {{if res8 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla8 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla8 }}
-                            {{/if}}
-                        </td>
-                        <td>
-                            {{if res9 != null}}
-                                {{if res9 == "Eagle"}}
-                                    <span style="color: black; background-color: green;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Birdie"}}
-                                    <span style="color: white; background-color: blue;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Par"}}
-                                    <span style="color: white; background-color: grey;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "Bogey"}}
-                                    <span style="color: black; background-color: orange;">{{: casilla9 }}</span>
-                                {{/if}}
-                                {{if res9 == "DobleBogey"}}
-                                    <span style="color: white; background-color: red;">{{: casilla9 }}</span>
-                                {{/if}}
-                            {{else}}
-                                {{: casilla9 }}
-                            {{/if}}
-                        </td>					
-                    </tr>
-                </script>
-            </tbody>
-    </table>
-    <br/><br/><br/>
-    <table>
-        <thead>
-            <tr><td colspan="2">Leyenda</td></tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>Eagle</td>
-                <td><span style="color: black; background-color: green;">
-                    &nbsp;&nbsp;&nbsp;-2&nbsp;&nbsp;</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Birdie</td>
-                <td><span style="color: white; background-color: blue;">
-                    &nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp;</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Par</td>
-                <td><span style="color: white; background-color: grey;">
-                        &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;</span>
-                </td>
-            </tr>
-            <tr>
-                <td>Bogey</td>
-                <td><span style="color: black; background-color: orange;">
-                    &nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;</span>
-                </td>
-            </tr>
-            <tr>
-                <td>DobleBogey</td>
-                <td><span style="color: white; background-color: red;">
-                    &nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
->>>>>>> 962e3f01d277dad27dd9b6357303c25793589469
 </html>

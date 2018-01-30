@@ -1,0 +1,15 @@
+td.eagle {
+    color: black; background-color: green;
+}
+td.birdie {
+    color: white; background-color: blue;
+}
+td.par {
+    color: white; background-color: grey;
+}
+td.bogey {
+    color: black; background-color: orange;
+}
+td.doblebogey {
+    color: white; background-color: red;
+}
